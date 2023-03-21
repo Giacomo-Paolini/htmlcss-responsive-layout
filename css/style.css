@@ -141,7 +141,7 @@ nav {
 }
 
 .planning .col {
-    /* width: 100%; */
+    width: 100%;
 }
 
 .card-planning {
@@ -155,6 +155,7 @@ nav {
 .planning-icon {
     background-color: var(--secondary-col);
     align-self: center;
+    aspect-ratio: 1/1;
     width: max-content;
     font-size: 1.5rem;
     border-radius: 50%;
@@ -163,15 +164,29 @@ nav {
 
 /************ TESTIMONIALS ************/
 
+.testimonials {
+    margin-bottom: 2rem;
+}
+
 .testimonials .col {
     width: 100%;
 }
 
 .card-testimonials {
     width: 100%;
-    height: 35em;
     background-color: #9792E4;
     border-radius: 30px;
+}
+
+.testimonials h2 {
+    color: var(--secondary-col);
+}
+
+.testimonials img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 50%;
+    border-radius: 50%;
 }
 
 /************ BENEFITS ************/
@@ -275,5 +290,20 @@ body.debug {
     .features-icon {
         color: var(--primary-col);
         font-size: 5rem;
+    }
+
+    /* TESTIMONIALS */
+    .testimonials .card-testimonials{
+        text-align: left;
+    }
+    .card-testimonials {
+        flex-direction: row;
+        align-items: center;
+    }
+    .testimonials img {
+        width: 80%;
+    }
+    .testimonials p {
+        margin-top: 0;
     }
 }
