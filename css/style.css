@@ -19,6 +19,14 @@
     color: white;
 }
 
+.black {
+    color: black;
+}
+
+.bg-white {
+    background-color: white;
+}
+
 /************ FLEX ************/
 
 .flex {
@@ -36,6 +44,10 @@
 .justify-between {
     justify-content: space-between;
     align-items: center;
+}
+
+.align-stretch {
+    align-items: stretch;
 }
 
 /************ BODY ************/
@@ -71,11 +83,11 @@ nav {
 
 .features .col-bigger {
     width: 100%;
-    padding: 1em;
+    padding: 1rem;
 }
 
 .col {
-    padding: 1em;
+    padding: 1rem;
 }
 
 .card-features {
@@ -109,7 +121,7 @@ nav {
     border-radius: 30px;
     border: none;
     padding: 0.5em 0em;
-    width: 100%;
+    width: 90%;
 }
 
 .features img {
@@ -129,13 +141,24 @@ nav {
 }
 
 .planning .col {
-    width: 100%;
+    /* width: 100%; */
 }
 
 .card-planning {
-    height: 40em;
     border-radius: 30px;
+}
+
+.planning img {
+    width: 100%;
+}
+
+.planning-icon {
     background-color: var(--secondary-col);
+    align-self: center;
+    width: max-content;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    padding: 20px;
 }
 
 /************ TESTIMONIALS ************/
@@ -199,6 +222,8 @@ body.debug {
     .boxed {
         max-width: 1200px;
         margin: 0 auto;
+        display: flex;
+        align-items: stretch;
     }
 
     /* FEATURES */
@@ -207,21 +232,48 @@ body.debug {
     }
     .features .col-bigger {
         width: calc(100% / 3 * 2);
-        padding: 1em;
+        padding: 1rem;
     }
     .col {
-        padding: 1em;
+        padding: 1rem;
     }
     .card-features {
         width: 100%;
-        height: 30em;
         border-radius: 30px;
         background-color: #B5DDFF;
     }
     .card-features-bigger {
         width: 100%;
-        height: 30em;
         border-radius: 30px;
         background-color: #B5DDFF;
+    }
+    .features h2 {
+        font-size: 1.5rem;
+        color: var(--primary-col);
+    }
+    .features p {
+        margin-top: 2rem;
+        font-size: 1.2em;
+        color: #5A6E7F;
+    }
+    .features button {
+        color: white;
+        background-color: var(--primary-col);
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        border-radius: 30px;
+        border: none;
+        padding: 0.5em 0em;
+        width: 50%;
+    }
+    .features img {
+        margin-left: 1rem;
+        width: 60%;
+        display: block;
+    }
+    
+    .features-icon {
+        color: var(--primary-col);
+        font-size: 5rem;
     }
 }

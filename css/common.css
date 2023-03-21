@@ -1,10 +1,3 @@
-:root {
-    --primary-col: #0084fd;
-    --primary-col-light: #b5ddff;
-    --secondary-col: #9792e4;
-    --secondary-col-light: #d5d4f4;
-}
-
 /************ UTILITIES ************/
 
 .text-center {
@@ -17,6 +10,22 @@
 
 .margin-top2 {
     margin-top: 2rem;
+}
+
+.margin-top3 {
+    margin-top: 3rem;
+}
+
+.margin-top5 {
+    margin-top: 5rem;
+}
+
+
+
+
+
+.padding-1 {
+    padding: 1rem;
 }
 
 .padding-2 {
