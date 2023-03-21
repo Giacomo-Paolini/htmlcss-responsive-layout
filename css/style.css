@@ -58,7 +58,14 @@ body {
 
 p {
     line-height: 2rem;
+    word-spacing: 5px;
 }
+
+button {
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
 
 .boxed {
     max-width: 600px;
@@ -122,7 +129,7 @@ nav {
     background-color: var(--primary-col);
     font-size: 1.5rem;
     margin-top: 2rem;
-    border-radius: 30px;
+    border-radius: 50px;
     border: none;
     padding: 0.5em 0em;
     width: 90%;
@@ -187,6 +194,10 @@ nav {
     font-size: 2rem;
 }
 
+.testimonials h4 {
+    font-weight: 100;
+}
+
 .testimonials img {
     aspect-ratio: 1/1;
     object-fit: cover;
@@ -233,14 +244,14 @@ nav {
     padding: 1em;
     background-color: var(--secondary-col);
     border: none;
-    border-radius: 30px;
+    border-radius: 50px;
     width: 50%;
 }
 
 /************ ABOUT US ************/
 
 .about {
-    padding: 1em;
+    padding: 1rem;
 }
 
 .about h2 {
@@ -261,7 +272,7 @@ nav {
 
 .about-icon {
     color: white;
-    margin-right: 0.5rem;
+    margin-right: 1rem;
 }
 
 .about button {
@@ -270,9 +281,54 @@ nav {
     padding: 1em;
     background-color: var(--secondary-col);
     border: none;
-    border-radius: 30px;
+    border-radius: 50px;
     width: 50%;
+    letter-spacing: 0px;
 }
+
+/************ GET STARTED ************/
+
+.get-started {
+    padding: 1rem;
+    background-color: var(--secondary-col);
+}
+
+.get-started h4 {
+    color: white;
+    font-weight: 100;
+}
+
+.get-started h2 {
+    font-size: 2.5em;
+    color: white;
+}
+
+.get-started span {
+    font-size: 4em;
+    color: #FDC15F;
+    font-weight: 600;
+}
+
+.get-started button {
+    font-size: 1.5em;
+    background-color: white;
+    color: var(--secondary-col);
+    border: none;
+    padding: 1.5rem;
+    width: 80%;
+    border-radius: 50px;
+}
+
+.get-started small {
+    font-size: large;
+    color: white;
+}
+
+.get-started a {
+    color: white;
+}
+
+
 
 /************ MEDIA QUERY ************/
 
@@ -368,5 +424,14 @@ body.debug {
     /* ABOUT */
     .about .col {
         width: 50%;
+    }
+    .about button {
+        width: 65%;
+    }
+
+    /* GET STARTED  */
+    .get-started .col {
+        max-width: 600px;
+        margin: 0 auto;
     }
 }
