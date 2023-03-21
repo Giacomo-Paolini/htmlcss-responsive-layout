@@ -328,7 +328,20 @@ nav {
     color: white;
 }
 
+/************ FOOTER ************/
 
+footer {
+    background-color: #333333;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: var(--secondary-col);
+}
 
 /************ MEDIA QUERY ************/
 
@@ -431,6 +444,12 @@ body.debug {
 
     /* GET STARTED  */
     .get-started .col {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    /* FOOTER */
+    footer .col {
         max-width: 600px;
         margin: 0 auto;
     }
