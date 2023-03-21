@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/common.css">
     <title>Responsive Layout</title>
 </head>
-<body>
+<body class="debug">
     <header>
         <nav class="boxed flex justify-between">
             <img src="./img/logo.png" alt="logo">
-            <ul>
+            <i class="fa-solid fa-bars menu" style="color: #ffffff;"></i>
+            <ul class="links-nav">
                 <a href="#">Planning</a>
                 <a href="#">Testimonials</a>
                 <a href="#">Features</a>
@@ -27,65 +29,95 @@
         <section class="features">
             <div class="boxed flex wrap justify-between">
                 <div class="col-bigger">
-                    <div class="square-bigger"></div>
+                    <div class="card-features-bigger"></div>
                 </div>
                 <div class="col">
-                    <div class="square"></div>
+                    <div class="card-features"></div>
                 </div>
                 <div class="col">
-                    <div class="square"></div>
+                    <div class="card-features"></div>
                 </div>
                 <div class="col">
-                    <div class="square"></div>
+                    <div class="card-features"></div>
                 </div>
                 <div class="col">
-                    <div class="square"></div>
+                    <div class="card-features"></div>
                 </div>    
             </div>
         </section>
 
         <!-- STRATEGIC PLANNING -->
         <section class="planning">
-            <div class="boxed flex">
-                <div class="col">
-                    <div class="square"></div>
+            <div class="boxed flex wrap">
+                <div class="col margin-top2">
+                    <div class="card-planning"></div>
                 </div>
-                <div class="col">
-                    <div class="square"></div>
+                <div class="col margin-bottom2">
+                    <div class="card-planning"></div>
                 </div>
             </div>
         </section>
 
         <!-- TESTIMONIALS -->
         <section class="testimonials">
-            <div class="boxed">
+            <div class="boxed flex wrap">
                 <div class="col text-center">
                     <h4>TESTIMONIALS</h4>
                     <h3>We are committed expert partners</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, nemo ipsa nihil nam delectus quos reiciendis architecto id ab obcaecati laboriosam vero ex pariatur dignissimos dolores corporis natus perspiciatis omnis.</p>
                 </div>
                 <div class="col">
-                    <div class="card"></div>
+                    <div class="card-testimonials"></div>
                 </div>
                 <div class="col">
-                    <div class="card"></div>
+                    <div class="card-testimonials"></div>
                 </div>
                 <div class="col">
-                    <div class="card"></div>
+                    <div class="card-testimonials"></div>
                 </div>
             </div>
         </section>
 
         <!-- BENEFITS -->
-        <section>
-            
+        <section class="benefits">
+            <div class="boxed flex column wrap">
+                <h3 class="text-center white">Benefits of working with us</h3>
+                <div class="col">
+                    <div class="card-benefits"></div>
+                </div>
+                <div class="col">
+                    <div class="card-benefits"></div>
+                </div>
+                <div class="col">
+                    <div class="card-benefits"></div>
+                </div>
+                <div class="col">
+                    <div class="card-benefits"></div>
+                </div>
+                <div class="col">
+                    <div class="card-benefits"></div>
+                </div>
+                <div class="col">
+                    <div class="card-benefits"></div>
+                </div>
+            </div>
         </section>
 
         <!-- ABOUT US -->
-        <section></section>
+        <section class="about">
+            <div class="flex cloumn wrap">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium facere, explicabo sed dolores aperiam eos, illum minima illo dolor quae dolore reprehenderit aliquid molestiae magni nulla nihil aut repellendus ullam!</p>
+                <div class="circle"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur deleniti consectetur delectus minus sit rem explicabo nihil similique error architecto. Delectus nihil atque ipsa! Pariatur aut possimus veritatis mollitia quisquam.</p>
+                <button>find me on linkedin</button>
+            </div>
+        </section>
 
         <!-- GET STARTED -->
-        <section></section>
+        <section>
+
+        </section>
     </main>
 
     <footer></footer>

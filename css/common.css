@@ -1,37 +1,19 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-header {
-    background-color: #0084FD;
-}
-
-nav {
-    min-height: 5em;
-}
-
-.boxed {
-    max-width: 1200px;
-    margin: 0 auto;
-}
+/************ UTILITIES ************/
 
 .text-center {
     text-align: center;
 }
 
-/************ FLEX ************/
-
-.flex {
-    display: flex;
+.margin-bottom2 {
+    margin-bottom: 2em;
 }
 
-.wrap {
-    flex-wrap: wrap;
+.margin-top2 {
+    margin-top: 2em;
 }
 
-.justify-between {
-    justify-content: space-between;
-    align-items: center;
+/************ COLORS ************/
+
+.white {
+    color: white;
 }
