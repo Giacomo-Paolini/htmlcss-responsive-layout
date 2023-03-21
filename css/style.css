@@ -260,7 +260,7 @@ nav {
 }
 
 .about img {
-    width: 30%;
+    width: 50%;
     border-radius: 50%;
     aspect-ratio: 1/1;
 }
@@ -357,7 +357,7 @@ body.debug {
         background-color: orange;
     }
     .boxed {
-        max-width: 1200px;
+        max-width: 1160px;
         margin: 0 auto;
         display: flex;
         align-items: stretch;
@@ -396,7 +396,7 @@ body.debug {
     .features button {
         color: white;
         background-color: var(--primary-col);
-        font-size: 1.5rem;
+        font-size: 1rem;
         margin-top: 2rem;
         border-radius: 30px;
         border: none;
@@ -404,7 +404,6 @@ body.debug {
         width: 50%;
     }
     .features img {
-        margin-left: 1rem;
         width: 60%;
         display: block;
     }
@@ -425,9 +424,6 @@ body.debug {
     .testimonials img {
         width: 80%;
     }
-    .testimonials p {
-        margin-top: 0;
-    }
 
     /* BENEFITS */
     .benefits .col {
@@ -435,11 +431,14 @@ body.debug {
     }
 
     /* ABOUT */
-    .about .col {
+    .about .col1 {
         width: 50%;
     }
+    .about .col2 {
+        width: 40%;
+    }
     .about button {
-        width: 65%;
+        width: 75%;
     }
 
     /* GET STARTED  */
@@ -452,5 +451,78 @@ body.debug {
     footer .col {
         max-width: 600px;
         margin: 0 auto;
+    }
+}
+
+/* DESKTOP  */
+@media screen and (min-width: 1160px) {
+    
+    /* BODY */
+    body.debug {
+        background-color: green;
+    }
+    
+    /* FEATURES */
+    .features .col {
+        width: calc(100% / 3);
+    }
+    .features .col-bigger {
+        width: calc(100% / 3 * 2);
+        padding: 1rem;
+    }
+    .col {
+        padding: 1rem;
+    }
+    .card-features {
+        width: 100%;
+        border-radius: 30px;
+        background-color: #B5DDFF;
+    }
+    .card-features-bigger {
+        flex-direction: row;
+        width: 100%;
+        border-radius: 30px;
+        background-color: #B5DDFF;
+    }
+    .features h2 {
+        font-size: 1.5rem;
+        color: var(--primary-col);
+    }
+    .features p {
+        margin-top: 2rem;
+        font-size: 1.2em;
+        color: #5A6E7F;
+    }
+    .features button {
+        color: white;
+        background-color: var(--primary-col);
+        font-size: 1rem;
+        margin-top: 2rem;
+        border-radius: 30px;
+        border: none;
+        padding: 0.5em 0em;
+        width: 50%;
+    }
+    .features img {
+        width: 40%;
+        display: block;
+    }
+    
+    .features-icon {
+        color: var(--primary-col);
+        font-size: 5rem;
+    }
+    
+    /* BENEFITS */
+    .benefits .col {
+        width: 50%;
+    }
+
+    /* ABOUT */
+    .about .col1 {
+        width: 60%;
+    }
+    .about .col2 {
+        width: 30%;
     }
 }
